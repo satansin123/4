@@ -1,0 +1,67 @@
+/* src/index.css */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Your existing styles go below */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Add this import to your CSS file or index.js */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex; /* Use flexbox for the body */
+  min-height: 100vh; /* Set the minimum height of the body to the full viewport height */
+}
+
+
+
+
+/* Add this to your CSS file */
+.nav-button {
+  padding: 8px 16px;
+  background-color: #2d2d2d; /* Adjust the background color as needed */
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 8px; /* Add margin between buttons */
+}
+
+.nav-button:hover {
+  background-color: #3d3d3d; /* Adjust the background color on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* You can adjust the colors, padding, and other styles as needed */
+
+.hero-section {
+  background-image: url('https://placehold.co/1920x1080?text=Coastal+Town+Scenery+Placeholder');
+}
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.hero-text {
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #333;
+  color: #ffffff;
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
+  .container-main {
+    margin-left: 0;
+  }
+}
